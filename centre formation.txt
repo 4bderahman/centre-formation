@@ -4,14 +4,14 @@
 
 3. SELECT codeForm, titreForm, MAX(prixForm) FROM centremformation.formation;
 
-4. SELECT codeForm, titreForm, MIN(prixForm) FROM centremformation.formation;
+	 SELECT codeForm, titreForm, MIN(prixForm) FROM centremformation.formation;
 
-5. SELECT SUM(prixForm) FROM centremformation.formation;
+4. SELECT SUM(prixForm) FROM centremformation.formation;
 
-6. SELECT codeSess, COUNT(numCINetu) FROM centremformation.inscription GROUP BY codeSess;
+5. SELECT codeSess, COUNT(numCINetu) FROM centremformation.inscription GROUP BY codeSess;
 
-7. SELECT DISTINCT numCINetu FROM centremformation.inscription;
+6. SELECT DISTINCT numCINetu FROM centremformation.inscription;
 
-8. SELECT numCINetu, COUNT(codeSess) FROM centremformation.inscription GROUP BY numCINetu;
+7. SELECT numCINetu, COUNT(codeSess) FROM centremformation.inscription GROUP BY numCINetu;
 
-9. SELECT codeSess, typeCours, COUNT(numinscription) FROM inscription GROUP BY codeSess, typeCours;
+8. SELECT codeSess, typeCours, COUNT(numinscription) FROM inscription GROUP BY codeSess, typeCours;
